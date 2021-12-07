@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://assets/fonts/title_font.tres" type="DynamicFont" id=1]
 [ext_resource path="res://icon.png" type="Texture" id=2]
 [ext_resource path="res://assets/fonts/button_font.tres" type="DynamicFont" id=3]
+[ext_resource path="res://src/menus/MainMenu.gd" type="Script" id=4]
 
 [sub_resource type="DynamicFontData" id=1]
 font_path = "res://assets/fonts/pixelated.ttf"
@@ -16,6 +17,7 @@ margin_left = 20.0
 margin_top = 20.0
 margin_right = 640.0
 margin_bottom = 340.0
+script = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -83,3 +85,6 @@ margin_right = 143.0
 margin_bottom = 192.0
 size_flags_stretch_ratio = 2.0
 texture = ExtResource( 2 )
+
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/MenuOptions/PlayBtn" to="." method="_on_PlayBtn_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/MenuOptions/QuitBtn" to="." method="_on_QuitBtn_pressed"]
