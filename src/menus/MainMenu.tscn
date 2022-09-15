@@ -12,15 +12,12 @@ font_path = "res://assets/fonts/pixelated.ttf"
 size = 24
 font_data = SubResource( 1 )
 
-[node name="MainMenu" type="MarginContainer"]
+[node name="MainMenu" type="Control"]
 margin_left = 20.0
 margin_top = 20.0
 margin_right = 640.0
 margin_bottom = 340.0
 script = ExtResource( 4 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 margin_right = 620.0
@@ -71,18 +68,12 @@ margin_bottom = 320.0
 custom_fonts/font = SubResource( 2 )
 text = "by: Diguifi"
 
-[node name="CenterContainer" type="CenterContainer" parent="HBoxContainer"]
-margin_left = 397.0
-margin_right = 620.0
-margin_bottom = 320.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-
-[node name="Logo" type="TextureRect" parent="HBoxContainer/CenterContainer"]
-margin_left = 79.0
-margin_top = 128.0
-margin_right = 143.0
-margin_bottom = 192.0
+[node name="Logo" type="TextureRect" parent="."]
+margin_left = 414.0
+margin_top = 130.0
+margin_right = 478.0
+margin_bottom = 194.0
+rect_scale = Vector2( 2, 2 )
 size_flags_stretch_ratio = 2.0
 texture = ExtResource( 2 )
 
