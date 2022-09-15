@@ -17,6 +17,7 @@ config/icon="res://icon.png"
 [autoload]
 
 Transition="*res://src/menus/Transition.tscn"
+Signals="*res://src/Signals.gd"
 
 [display]
 
